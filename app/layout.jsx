@@ -9,10 +9,11 @@ const ubuntu = Ubuntu({
   weight: "500",
   subsets: ["latin"],
 });
+
 export default function layout({ children }) {
   return (
     <html lang="en" className={ubuntu.className}>
-      <body>
+      <body suppressHydrationWarning={true}>
         <main>{children}</main>
       </body>
     </html>
