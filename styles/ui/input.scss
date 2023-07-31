@@ -1,0 +1,15 @@
+@import "../variables.scss";
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $accent;
+  color: $accent;
+  padding: 0.5rem 0.5rem;
+  @include fontsize(1.5rem);
+
+  &:focus {
+    outline: none;
+    color: $primary;
+    border-bottom: 1px solid $primary;
+  }
+}

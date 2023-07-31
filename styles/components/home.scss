@@ -23,7 +23,9 @@
     &__bot {
       width: 80vw;
       @include flex(center, flex-start, row, 2rem);
-      &__button {
+      &__buttons {
+        width: 50%;
+        @include flex(center, center, row, 1rem);
         &--left {
           background-color: $primary;
         }

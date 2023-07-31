@@ -1,8 +1,8 @@
 import "@/styles/ui/button.scss";
-export default function Button({ text, onClick, className }) {
+export default function Button({ onClick, className, children }) {
   return (
     <button className={`button ${className}`} onClick={onClick}>
-      {text}
+      {children}
     </button>
   );
 }

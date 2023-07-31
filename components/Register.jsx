@@ -7,7 +7,7 @@ import Input from "./ui/Input";
 import Button from "./ui/Button";
 import { FcGoogle } from "react-icons/fc";
 
-export default function Signin({ setIsSignin }) {
+export default function Register({ setIsSignin }) {
   const [provider, setProvider] = useState(null);
   const { data: session } = useSession();
   useEffect(() => {
@@ -28,13 +28,14 @@ export default function Signin({ setIsSignin }) {
     <div className="signinContainer">
       <div className="signin">
         <div className="signin__top">
-          <h1> pottoz // sign in</h1>
+          <h1> pottoz // Register</h1>
         </div>
         <div className="signin__mid">
           <div className="signin__mid__inputs">
             <Input placeholder="email@" />
             <Input placeholder="password*" />
-            <Button>Sign in</Button>
+            <Input placeholder="password* again" />
+            <Button>Register</Button>
           </div>
 
           <div className="signin__mid__providers">
@@ -46,8 +47,7 @@ export default function Signin({ setIsSignin }) {
                   className="signin__mid__providers__provider"
                 >
                   <Button onClick={() => signIn(provider.id)}>
-                    <FcGoogle />
-                    Sign in with {provider.name}
+                    <FcGoogle /> Sign in with {provider.name}
                   </Button>
                 </div>
               ))}
@@ -57,10 +57,10 @@ export default function Signin({ setIsSignin }) {
           <Link href="/">Back to home</Link>
           <p
             onClick={() => {
-              setIsSignin(false);
+              setIsSignin(true);
             }}
           >
-            Create an account
+            all ready have a account sign in
           </p>
         </div>
       </div>

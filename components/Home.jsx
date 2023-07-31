@@ -13,11 +13,12 @@ export default function Home() {
           <h3>{sessioon?.user.name}</h3>
         </div>
         <div className="home__bot">
-          <Button text="Get Started" className="home__bot__button--left" />
-          <Button
-            text="How does it work ?"
-            className="home__bot__button--right"
-          />
+          <div className="home__bot__buttons">
+            <Button className="home__bot__buttons--left">Get Started</Button>
+            <Button className="home__bot__buttons--right">
+              How does it work ?
+            </Button>
+          </div>
         </div>
       </div>
     </div>
