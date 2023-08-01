@@ -1,0 +1,10 @@
+@import "./variables.scss";
+.createImgContainer {
+  height: 100vh;
+  width: 100%;
+  @include flex(center, center, column, 0);
+}
+.createImg {
+  width: 50%;
+  height: 50%;
+}
