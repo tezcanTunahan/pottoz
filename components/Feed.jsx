@@ -1,4 +1,5 @@
 "use client";
+import "@/styles/components/feed.scss";
 import { useState, useEffect } from "react";
 
 export default function Feed() {
@@ -13,15 +14,12 @@ export default function Feed() {
   }, []);
 
   return (
-    <div>
-      <h1>Feed</h1>
-      <div>
-        {img.map((img) => (
-          <div key={img.id}>
-            <img src={img.img} />
-          </div>
-        ))}
-      </div>
+    <div className="feed">
+      {img.map((img) => (
+        <div key={img.id} className="feed__imgContainer">
+          <img src={img.img} className="feed__imgContainer__img" />
+        </div>
+      ))}
     </div>
   );
 }

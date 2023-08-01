@@ -1,5 +1,17 @@
-.desc {
+@import "../variables.scss";
+.descContainer {
   height: 100vh;
   width: 100%;
-  background-color: red;
+  .desc {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    @include flex(flex-start, center, column, 3rem);
+    &__title {
+      @include fontsize(3rem);
+    }
+    &__text {
+      @include fontsize(2rem);
+    }
+  }
 }

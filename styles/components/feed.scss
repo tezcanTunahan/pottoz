@@ -1,0 +1,12 @@
+@import "../variables.scss";
+.feed {
+  width: 100%;
+  @include flex(flex-start, center, row, 1rem);
+  flex-wrap: wrap;
+  &__imgContainer {
+    flex-basis: 32%;
+    &__img {
+      width: 100%;
+    }
+  }
+}
