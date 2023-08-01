@@ -1,5 +1,5 @@
 "use client";
-import "@/styles/createImg.scss";
+import "@/styles/createimg.scss";
 import ImageUploader from "@/components/ImageUploader";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
