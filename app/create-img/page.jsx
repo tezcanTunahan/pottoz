@@ -3,7 +3,7 @@ import "@/styles/createImg.scss";
 import ImageUploader from "@/components/ImageUploader";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Button from "@/components/ui/Button";
 
 export default function page() {
