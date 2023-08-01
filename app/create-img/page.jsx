@@ -3,11 +3,13 @@ import "@/styles/createImg.scss";
 import ImageUploader from "@/components/ImageUploader";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
+import { useRouter } from "next/router";
 import Button from "@/components/ui/Button";
 
 export default function page() {
   const { data: session } = useSession();
   const [img, setImg] = useState();
+  const router = useRouter();
 
   const createImg = async (e) => {
     e.preventDefault();
