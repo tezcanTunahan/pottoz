@@ -1,5 +1,5 @@
 "use client";
-import "@/styles/signinPage.scss";
+import "@/styles/signinpage.scss";
 import { useState } from "react";
 import Signin from "@/components/Signin";
 import Register from "@/components/Register";
