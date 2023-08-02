@@ -1,0 +1,7 @@
+@import "./variables.scss";
+.homepage {
+  @include flex(flex-start, flex-start, row, 0);
+  &__content {
+    width: 100%;
+  }
+}

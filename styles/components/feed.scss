@@ -1,6 +1,7 @@
 @import "../variables.scss";
 .feed {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   @include flex(flex-start, center, row, 1rem);
   flex-wrap: wrap;
   &__imgContainer {
